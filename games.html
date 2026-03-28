@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <link rel='stylesheet' href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <link rel="icon" href="images/logo.png">
+  
+  <title>Landon's Video Player</title> 
+</head>
+<body>
+<div class="target-div2"> 
+  <main>
+    <div class="target-div">  
+      <div class="target-div"><h2>Landon's Video Player</h2></div>
+      <button id="menu"></button>
+      <nav class="navigation">
+           
+      <a href="index.html">Home</a>
+      <a href="music.html">Videos</a>
+      <a href="movies.html">Movies</a>
+      <a href="settings.html">Settings</a>
+      <a href="https://landons1.codewizardshq.com/MusicSounds.html/index.html" target="_blank">Old Version</a>
+        <a href="#">🔘 Games</a>
+        <a href="sound-effects.html">Sound Effects</a>
+        <a href="https://landons1.codewizardshq.com/Chat-Bot/chat-bot.html" target="_blank">ChatBot(beta)</a>
+
+      </nav>
+   
+      
+    </div>
+
+    <div class="target-div">
+      <h1>Games to play:</h1>
+      <div class="video-container">      
+      <a href="https://landons1-flask-5c988c7.apps.codewizardshq.com/">Space Invaders</a>
+    </div>
+    <div class="video-container">      
+      <a href="https://landons1.codewizardshq.com/m222_js_11/space.html">Space Impact</a>
+    </div>
+      
+      <div class="video-container">      
+      <a href="https://landons1.codewizardshq.com/e33_intro_to_js_01/index.html">Find The Theif</a>
+    </div>
+      <div class="video-container">      
+      <a href="https://landons1.codewizardshq.com/e33_intro_to_js_02/index.html">RPG Character Generator</a>
+    </div>
+      <div class="video-container">      
+      <a href="https://landons1.codewizardshq.com/e33_intro_to_js_03/index.html">Marvel Shop</a>
+    </div>
+      <div class="video-container">      
+      <a href="https://landons1.codewizardshq.com/e33_intro_to_js_04/index.html">Yoda Trivia</a>
+    </div>
+      <div class="video-container">      
+      <a href="https://landons1.codewizardshq.com/e33_intro_to_js_05/index.html">Candy Clusters</a>
+    </div>
+      <div class="video-container">      
+      <a href="https://landons1.codewizardshq.com/e33_intro_to_js_09/index.html">Whack A Mole</a>
+    </div>
+      
+      
+
+    </div>
+      <div class="target-div">        
+      <h1>Information:</h1>
+      <p>(work in progress.)</p>
+    </div>
+
+    
+  </main>
+  </div>
+  
+</body>    
+<script>
+  const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
+});
+  
+function changeBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+            sessionStorage.setItem('bgColor', color);
+        }
+
+        const savedColor = sessionStorage.getItem('bgColor');
+        if (savedColor) {
+            document.body.style.backgroundColor = savedColor;
+        }
+
+function changeDivBackgroundColor(color) {
+            const divElements = document.querySelectorAll('.target-div');
+            divElements.forEach(div => {
+                div.style.backgroundColor = color;
+                sessionStorage.setItem('divColor', color);
+            });
+        }
+
+        
+        const savedDivColor = sessionStorage.getItem('divColor');
+        if (savedDivColor) {
+            const divElements = document.querySelectorAll('.target-div');
+            divElements.forEach(div => {
+                div.style.backgroundColor = savedDivColor;
+            });
+        }
+  
+  function changeDiv2BackgroundColor(color) {
+            const navElements = document.querySelectorAll('.navigation');
+            navElements.forEach(div => {
+                navigation.style.backgroundColor = color;
+                sessionStorage.setItem('navColor', color);
+            });
+        }
+
+        
+        const savednavColor = sessionStorage.getItem('navColor');
+        if (savednavColor) {
+            const navElements = document.querySelectorAll('.navigation');
+            navElements.forEach(div => {
+                navigation.style.backgroundColor = savednavColor;
+            });
+        }
+  
+    function changeDiv3BackgroundColor(color) {
+            const divElements = document.querySelectorAll('.target-div2');
+            divElements.forEach(div1 => {
+                div1.style.backgroundColor = color;
+                sessionStorage.setItem('div3Color', color);
+            });
+        }
+
+        
+        const saveddiv3Color = sessionStorage.getItem('div3Color');
+        if (saveddiv3Color) {
+            const divElements = document.querySelectorAll('.target-div2');
+            divElements.forEach(div1 => {
+                div1.style.backgroundColor = saveddiv3Color;
+            });
+        }
+  
+  
+  </script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</html>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
